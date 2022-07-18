@@ -1,0 +1,18 @@
+
+//<script>
+
+
+async function connect(){
+    if(typeof window.ethereum !== "undefined"){
+        window.ethereum.request({method:"eth_requestAccounts"})
+     
+     } else {
+         console.log("No metamask")
+     }
+ }
+
+ //script>
+
+ //<button id="connectionButton" onclick="connect()">Connect</button>
+  //id= identity, onclick will call the function.
+  
